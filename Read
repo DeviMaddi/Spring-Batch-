@@ -1,0 +1,22 @@
+Spring Batch - it is a framework used to build batch applications,  that provides a scalable, reusable solution for processing large volumes of data.
+             - used for batch processing
+             - job managements - it define, schedule, and manage batch jobs.
+             - it will read data from various sources , and transform/validate/process data, and can write to various destinations.
+
+
+Job Launcher - Job - step - item reader - item processor - item writer
+
+Job Launcher - it will trigger execution of batch job  // jobLauncher.run(job, jobParam)
+Job - a bacth process that perform a specific task  // a job can have multiple steps
+step -  a task within a job
+reader - reads data from source
+processor - process/validate/transform data
+writer - writes data to various destination
+JobRepository - it will store meta data about job and execution  history
+StepBuilderFactory - it is a utility class helps to create steps in spring batch job
+JobBuilderFactory - it is a utility class helps to create jobs in spring batch
+Chunk - chunk (10) - it will process as group of 10 items as a single transaction and writes
+
+****job parameters - we can create flexible and reusable jobs that adapt to changing requirements,
+               - pass external data to jobs
+               
